@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LoginTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-02T16:46:23" hostname="Rockar-Laptop-15MBPs-MacBook-Pro.local" time="3.212">
+<testsuite name="LoginTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-03T15:34:11" hostname="Rockar-Laptop-15MBPs-MacBook-Pro.local" time="1.655">
   <properties/>
-  <testcase name="CheckoutPageGetTotal" classname="LoginTest" time="3.212"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[1583167585.218][SEVERE]: Timed out receiving message from renderer: 0.100
-[1583167585.430][SEVERE]: Timed out receiving message from renderer: 0.100
+  <testcase name="DemoMitsubishiCarsTotal" classname="LoginTest" time="1.655"/>
+  <system-out><![CDATA[24150
+24150
+Total: 48300
+]]></system-out>
+  <system-err><![CDATA[[1583249651.809][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583249652.727][SEVERE]: Timed out receiving message from renderer: 0.100
 ]]></system-err>
 </testsuite>

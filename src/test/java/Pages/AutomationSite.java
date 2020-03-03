@@ -2,13 +2,17 @@ package Pages;
 
 import org.openqa.selenium.WebDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class AutomationSite {
 
-    private WebDriver driver;
+    private static WebDriver driver;
     private jaguar_page jaguar;
     private DemoCar_Page demoCar_page;
     private valueCurrentCar_Page valueCurrentCar;
     private ChooseCar_Page chooseCar_page;
+    private static final int implicitWaitTime = 15;
+
 
     public AutomationSite(WebDriver driver){
         this.driver = driver;
@@ -23,4 +27,8 @@ public class AutomationSite {
     public valueCurrentCar_Page getValueCurrentCar(){return valueCurrentCar;}
     public ChooseCar_Page getChooseCar_page(){return chooseCar_page;}
 
+    public static void setWaitTimeout(int waitTimeout){
+        driver.manage().timeouts().implicitlyWait(waitTimeout, TimeUnit.SECONDS);
+        setWaitTimeout(implicitWaitTime);
+    }
 }
